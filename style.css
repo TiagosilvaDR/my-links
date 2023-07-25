@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
+@keyframes drowning {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%;}
+}
+@keyframes efeitinho {
+    from {color: #000000;}
+    to {color:rgb(243, 247, 247)}
+}
+
 body {
+    background-image: linear-gradient(to top, #000000 0%, #000000 37%, #ffffff 67%, #110122 100%);
+    background-size: 300% 300%;
+    animation: drowning 7s infinite alternate;
     background-color: black;
     font-family: sans-serif;
 }
